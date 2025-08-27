@@ -1,2 +1,2 @@
 # Flexa
-This project is a platform for temporary jobs / hourly paid jobs / casual jobs
+This project is a platform for sub-contractors, for hiring teams at the construction industry
