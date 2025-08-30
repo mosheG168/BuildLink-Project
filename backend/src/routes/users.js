@@ -44,6 +44,7 @@ const serializeUser = (u) => ({
   image: u.image,
   address: u.address,
 });
+//? Maybe return a more minimal payload on login/register? For now, full profile minus passwordHash.
 
 // Normalize email (trim + lowercase) in a single, reusable function.
 const normalizeEmail = (e) =>
