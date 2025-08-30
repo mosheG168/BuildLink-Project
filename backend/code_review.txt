@@ -61,39 +61,7 @@ Team Questions — Subcontractor Teams Project
 
     Job required fields (MVP): title, description, location/region, budget/range, skills needed, team (optional?) — confirm the exact set.
 
-    Ranking/filters: Sort by proximity, skills match, and verification status? Which filters are must‑have in MVP?
+    Ranking/filters: Sort by proximity, skills match, and verification status? Which filters are must‑have?
 
 
-    TODO: (28/08 - 30/08)
-        1. Add .env.atlas
-        2. Add comments
-        3. Finish Register - userController.js VS users.js
-        4. Create Login.
-        5. Plan profile page
-
-
-MVP = Minimum Viable Product.
-
-It’s the smallest, usable version of your product that:
-
-solves the core problem for early users,
-
-can be shipped end-to-end,
-
-lets you measure real usage and learn what to build next.
-
-What it’s not: a throwaway mock or a full/“perfect” build. It’s real, but minimal.
-
-For your app, an MVP could be:
-
-Auth: register + login (with your validations).
-
-Profile: create/edit profile; enforce phone/email + role.
-
-Jobs: post a job (contractor), view a feed, apply (worker/sub).
-
-Basic search/filter: by role/region.
-
-Admin seed (optional) for moderation.
-
-Success signals: users can register, complete profiles, post jobs, and get at least a few matches/applications—plus you can track signups, posts, and applies to guide v2.
+   
