@@ -141,3 +141,7 @@ ContractorProfileSchema.index({
 ContractorProfileSchema.index({ primaryTrade: 1 });
 
 export default model("ContractorProfile", ContractorProfileSchema);
+
+//TODO: Add pre-save hooks to calculate profile completeness based on filled fields.
+//TODO: Create a separate collection for job postings and link them to contractor profile.
+//TODO: Create a validation schema using Joi in a separate file (validators/contractorProfile.js ).

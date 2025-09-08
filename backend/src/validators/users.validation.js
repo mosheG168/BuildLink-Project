@@ -1,4 +1,3 @@
-// validators/users.validation.js
 // Page purpose: Centralizes all Joi schemas + a generic middleware (validateUser)
 // to enforce input shape for auth and user routes. Strips unknowns and collects
 // ALL validation errors for better client UX.
@@ -18,7 +17,7 @@ export const passwordPattern =
 export const israeliPhonePattern = /^(?:\+972|0)5[0-9](?:[- ]?\d){7}$/;
 
 // Reuse these where needed (keeps roles consistent across app)
-export const ROLES = ["worker", "subcontractor", "contractor", "admin"];
+export const ROLES = ["subcontractor", "contractor", "admin"];
 
 const nameSchema = Joi.object({
   first: Joi.string().trim().min(2).max(256).required().messages({
