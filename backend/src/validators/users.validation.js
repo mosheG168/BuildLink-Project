@@ -81,7 +81,7 @@ const addressSchema = Joi.object({
       "string.pattern.base": "House number must be 1–4 digits",
       "any.required": "House number is required",
     }),
-  // Israel ZIPs are 7 digits; accept 5–7 to be forgiving.
+  // Israel ZIPs are 7 digits.
   zip: Joi.alternatives()
     .try(Joi.number(), Joi.string().pattern(/^\d{5,7}$/))
     .required()
@@ -211,3 +211,5 @@ export const validateUser = (schema) => (req, res, next) => {
 };
 
 //? Consider moving heavy fields (address, image) to a post-register "Complete Profile" step for a lighter signup UX.
+
+//? Why is login and register schema here as well?????
