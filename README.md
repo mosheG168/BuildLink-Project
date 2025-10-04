@@ -1,2 +1,1 @@
-# Flexa
-This project is a platform for sub-contractors, for hiring teams at the construction industry
+# BuildLink — A full-stack platform connecting contractors and subcontractors in the construction industry. Built with Node.js, React, Python, MongoDB, and Material UI, featuring JWT authentication, role-based access, and AWS-hosted real-time collaboration for hiring and recommendations. Integrates text embeddings and semantic search via HuggingFace, OpenAI, and Claude models to intelligently match professionals and project teams.
