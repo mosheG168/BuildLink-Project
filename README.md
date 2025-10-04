@@ -1,2 +1,2 @@
 # BuildLink-Project
-full-stack platform connecting contractors and subcontractors. Built with Node.js, React, Python, and MongoDB, featuring JWT auth, role-based access, and semantic search via HuggingFace, OpenAI, and Claude.
+A full-stack platform connecting contractors and subcontractors in the construction industry. Built with Node.js, React, Python, MongoDB, and Material UI, featuring JWT authentication, role-based access, and AWS-hosted real-time collaboration for hiring and recommendations. Integrates text embeddings and semantic search via HuggingFace, OpenAI, and Claude models to intelligently match professionals and project teams.
