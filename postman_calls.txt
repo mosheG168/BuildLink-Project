@@ -1,0 +1,77 @@
+# request examples via postman.
+# using http://localhost:3700/users
+# using PORT=3700
+# MONGO_URI=mongodb://127.0.0.1:27017/bcards-backend
+
+# Register
+# request:
+
+{
+  "name": {
+    "first": "Moshe",
+    "middle": "",
+    "last": "GREEN"
+  },
+  "phone": "0501234567",
+  "email": "john@example2233.com",
+  "password": "Abc!12345",
+  "image": {
+    "url": "",
+    "alt": ""
+  },
+  "address": {
+    "state": "IL",
+    "country": "Israel",
+    "city": "Tel Aviv",
+    "street": "Herzl",
+    "houseNumber": 1,
+    "zip": 12345
+  },
+  "isBusiness": true
+}
+
+# response:
+{
+    "name": {
+        "first": "moshe",
+        "middle": "",
+        "last": "green",
+        "_id": "68a0c5c5f6ecf6586a7392b9"
+    },
+    "email": "john@example2233.com",
+    "_id": "68a0c5c5f6ecf6586a7392b9"
+}
+
+# status: 201 Created.
+
+
+# Login
+# request:
+
+{
+  "email": "john@example2233.com",
+  "password": "Abc!12345"
+}
+
+# response:
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2OGEwYzVjNWY2ZWNmNjU4NmE3MzkyYjkiLCJpc0J1c2luZXNzIjp0cnVlLCJpc0FkbWluIjpmYWxzZSwiaWF0IjoxNzU1MzY4NDI1LCJleHAiOjE3NTU0NTQ4MjV9.5TIA_AJsWludT6sStVUuDLTGIwUKx5eYWpxeIqEr6Ug"
+}
+
+# status 200 OK.
+
+
+# example bad request -> response:
+
+# request: (wrong password)
+{
+  "email": "john@example2233.com",
+  "password": "Abc"
+}
+
+# response:
+{
+    "message": "Invalid email or password"
+}
+
+# status 400 Bad Request

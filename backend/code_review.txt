@@ -1,0 +1,67 @@
+Team Questions — Subcontractor Teams Project
+
+1. Registration & Onboarding
+
+    . Form scope: Keep the register form minimal (name, email, phone, password) and require profile completion after login, or collect role‑specific fields during registration?
+
+    . Example: If role = contractor → require license/certificate number. If subcontractor/worker → request         specialties, years of experience, portfolio links. 
+
+    https://www.gov.il/apps/moch/rasham/home  -> Contractor License page finder from GOV.il
+    https://data.labor.gov.il/Electricians/GetLicenseList.aspx -> Electricians License page finder from GOV.il
+    ......
+
+    . Onboarding flow: After first login, should we route to a guided profile setup (progress steps) before showing the feed/jobs?
+
+    . Gating features: Block posting jobs/applying/teaming until required profile fields are completed?
+
+
+2. Identity & Legitimacy (Verification)
+
+    Contractor/subcontractor verification: Do we use a government/official registry API to verify license numbers and names? If yes, which source(s) and what fields are we storing (expiry, status)?
+
+    Fallback: If the API is unavailable, do we support manual verification (document upload + admin approval)?
+
+    Worker validation: Minimum requirements—government ID number only? ID + selfie match? Photo of recent payslip/certificate? What’s in scope for MVP?
+
+    Verification badges: Do we show public badges (e.g., "Verified Contractor") with levels (auto/API verified vs. admin‑reviewed)?
+
+3. Roles & Permissions
+
+    Roles we support at MVP: worker, subcontractor, contractor, admin (confirm?).
+
+    Who can create teams? should we create teams? if so - Who can post jobs? Who can apply? Can workers request to join teams?
+
+    Team owners: can they promote/demote members and set roles (owner, manager, member)?
+
+
+4. Profile: Data Model & Required Fields
+
+    Required per role (MVP):
+
+    Links to Midrag, social Media?
+
+    Contractor: company name, license/cert number, specialties, regions, years in business.
+
+    Subcontractor: license/cert number specialties (e.g., tiling, drywall), tools/equipment, regions, availability.
+
+    Worker: skills, certifications (if any), desired roles, availability.
+
+    Media: Allow images (project photos, certificates) at registration or only in profile? Max size/format? Need image alt text for accessibility?
+
+    Contact: Confirm Israeli phone format (05XXXXXXXX), email uniqueness.
+
+    Location fields: country, city, street, house number, zip—are these required for all roles?
+
+
+5. Feed & Job Posting 
+
+    Feed content: After login, what does each role see by default—jobs, teams recruiting, or mixed?
+
+    Who can post jobs: Contractors only, or also subcontractors? Any admin approval needed?
+
+    Job required fields (MVP): title, description, location/region, budget/range, skills needed, team (optional?) — confirm the exact set.
+
+    Ranking/filters: Sort by proximity, skills match, and verification status? Which filters are must‑have?
+
+
+   
