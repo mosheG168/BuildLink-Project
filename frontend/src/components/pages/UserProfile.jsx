@@ -1,0 +1,3 @@
+//* I'll Create a profile page to display all info about the user and allow them to edit it.
+//* This page will be accessible from the navbar when logged in.
+//? Should I include: post jobs, view jobs, chat, edit posts etc...
